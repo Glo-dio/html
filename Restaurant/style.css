@@ -1,0 +1,132 @@
+html, body {
+	margin: 0;
+	line-height: 1.4;
+	/* letter-spacing: ; */
+	font-family: serif;
+	font-size: 20px;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background: grey;
+	padding: 20px;
+	height: 20px;
+	color: white;
+} 
+
+.header img {
+	width: 100%;
+	height: auto;
+}
+
+.main .banniere {
+	width: 30%;
+	height: auto;
+	margin: 0;
+}
+
+.header-title {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	z-index: 4;
+	margin-top: 0;
+	font-weight: bold;
+}
+
+.header-nav {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	z-index: 3;
+	margin: 20px 0;
+	text-align: center;
+	background: red;
+}
+
+.header-nav a {
+	padding: 0 10px;
+	background: lightgreen;
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+}
+
+.header-nav a:hover {
+	text-decoration: underline;
+}
+
+/* img[src^=img] {
+	margin: 80px 0;
+} */
+
+span {
+	background: lightgreen;
+}
+
+.main {
+	position: relative;
+	z-index: 1;
+	background: lightgrey;
+	padding: 60px 0px 20px;
+
+}
+
+.main p, .main h2 {
+	padding: 0px 20px ;
+}
+
+.main p {
+	text-align: justify;
+}
+
+
+
+.footer {
+	background: grey;
+	padding: 10px 20px;
+}
+
+.button {
+	color: white;
+	background: lightblue;
+	text-decoration: none;
+	padding: .5em 1em;
+	font-size: 1rem;
+	
+	/* position: absolute;
+	top: 0;
+	left: 0; */
+	/* z-index: 5; */
+}
+
+.button2 {
+	color: white;
+	background: lightgreen;
+	text-decoration: none;
+	padding: .5em 1em;
+	font-size: 1.25rem;
+}
+
+.button3 {
+	color: white;
+	background: lightpink;
+	text-decoration: none;
+	padding: .5em 1em;
+	font-size: 20px;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 30px;
+}
+
+hr {
+	clear: both;
+
+}
