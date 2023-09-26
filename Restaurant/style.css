@@ -1,6 +1,6 @@
 html, body {
 	margin: 0;
-	line-height: 1.4;
+	line-height: 1.2;
 	/* letter-spacing: ; */
 	font-family: serif;
 	font-size: 20px;
@@ -8,13 +8,16 @@ html, body {
 
 .header {
 	position: fixed;
+	/* peut remplacer 'overflow: hidden' */
+	/* overflow: hidden; */
+	/* peut remplacer 'position: fixed' */
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 2;
 	background: grey;
 	padding: 20px;
-	height: 20px;
+	height: auto;
 	color: white;
 } 
 
@@ -30,22 +33,21 @@ html, body {
 }
 
 .header-title {
-	position: absolute;
-	top: 0;
-	left: 10px;
-	z-index: 4;
+	float: left;
 	margin-top: 0;
 	font-weight: bold;
+	text-transform: capitalize;
+	z-index: 4;
 }
 
 .header-nav {
-	position: absolute;
-	top: 0;
-	right: 10px;
-	z-index: 3;
+	float: right;
+	/* display: inline-block; */
+	background: red;
 	margin: 20px 0;
 	text-align: center;
-	background: red;
+	text-transform: capitalize;
+	z-index: 3;
 }
 
 .header-nav a {
