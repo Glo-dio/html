@@ -1,25 +1,54 @@
 html, body {
 	margin: 0;
 	line-height: 1.2;
-	/* letter-spacing: ; */
 	font-family: serif;
 	font-size: 20px;
 }
 
+/* V1 normal */
 .header {
-	position: fixed;
-	/* peut remplacer 'overflow: hidden' */
-	/* overflow: hidden; */
-	/* peut remplacer 'position: fixed' */
-	top: 0;
-	left: 0;
-	right: 0;
 	z-index: 2;
-	background: grey;
+
+	/* version multiple bg proprieties */
+	
+	/* background-image: url(https://fakeimg.pl/50x50);
+	background-image:
+		linear-gradient(to bottom, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.4)),
+		url(img/banniere.jpg);
+	background-color: azure;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-position: center top;
+	background-size: cover; */
+
+	/* version 1 bg proprietie */
+	
+	background: 
+		linear-gradient(to bottom, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.4)),
+		center top / cover no-repeat url(img/banniere.jpg) fixed;
+
 	padding: 20px;
 	height: auto;
-	color: white;
+	height: 600px;
+	color: rgb(255, 255, 255);
 } 
+
+/* V2 image dans texte */
+/* .header {
+	z-index: 2;
+	background-image: url(img/banniere.jpg);
+	background-color: azure;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-position: center bottom;
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+color: transparent;
+	padding: 20px;
+	height: 300px;
+	height: auto;
+}  */
 
 .header img {
 	width: 100%;
@@ -27,23 +56,24 @@ html, body {
 }
 
 .main .banniere {
-	width: 30%;
+	width: 100%;
 	height: auto;
 	margin: 0;
 }
 
 .header-title {
-	float: left;
-	margin-top: 0;
+	/* font-size: 160px; */
+	text-align: center;
+	margin: 0;
 	font-weight: bold;
 	text-transform: capitalize;
 	z-index: 4;
 }
 
 .header-nav {
-	float: right;
-	/* display: inline-block; */
+	overflow: hidden;
 	background: red;
+	color: white;
 	margin: 20px 0;
 	text-align: center;
 	text-transform: capitalize;
@@ -51,27 +81,23 @@ html, body {
 }
 
 .header-nav a {
-	padding: 0 10px;
-	background: lightgreen;
-	display: inline-block;
+	float: left;
+	width: 33.33%;
+	background: rgba(144, 238, 144, .9);
 	color: inherit;
 	text-decoration: none;
 }
 
 .header-nav a:hover {
 	text-decoration: underline;
+	background-color: rgba(144, 238, 144, .7);
 }
-
-/* img[src^=img] {
-	margin: 80px 0;
-} */
 
 span {
 	background: lightgreen;
 }
 
 .main {
-	position: relative;
 	z-index: 1;
 	background: lightgrey;
 	padding: 60px 0px 20px;
@@ -86,8 +112,6 @@ span {
 	text-align: justify;
 }
 
-
-
 .footer {
 	background: grey;
 	padding: 10px 20px;
@@ -99,11 +123,7 @@ span {
 	text-decoration: none;
 	padding: .5em 1em;
 	font-size: 1rem;
-	
-	/* position: absolute;
-	top: 0;
-	left: 0; */
-	/* z-index: 5; */
+	z-index: 5;
 }
 
 .button2 {
